@@ -128,17 +128,10 @@ img {
 /* fin del footer */
 
 /* pagina categorias */
+
 /* media querys "categorias */
 
-@media only screen and (max-width:768px){
-.grid{
-    flex-direction: column;
-}
-}
-.grid{
-    width: 100%;
-    margin: 20px 0;
-}
+/* fin media querys categorias */
 
 .detalles-card{
     background-color: rgb(90, 214, 255);
@@ -159,6 +152,9 @@ img {
 
 
 
+/* media querys servicios */
+
+/* fin media querys servicios*/
 
 /* pagina de "servicios" */
 .servicios {
