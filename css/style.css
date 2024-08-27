@@ -58,6 +58,57 @@ h1{
 }
 /* fin del contenido */
 
+/* media querys index */
+/* Media query para pantallas de 768px o menos */
+@media only screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .photo {
+      padding: 10px;
+    }
+    .photo img {
+      height: 100px;
+    }
+  }
+  
+  /* Media query para pantallas de 480px o menos */
+  @media only screen and (max-width: 480px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .photo {
+      padding: 5px;
+    }
+    .photo img {
+      height: 50px;
+    }
+  }
+  
+  /* Media query para pantallas de 320px o menos */
+  @media only screen and (max-width: 320px) {
+    .photo {
+      padding: 3px;
+    }
+    .photo img {
+      height: 30px;
+    }
+  }
+  
+  /* Media query para pantallas de 1024px o más */
+  @media only screen and (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .photo {
+      padding: 30px;
+    }
+    .photo img {
+      height: 200px;
+    }
+  }
+/* fin media querys index */
+
 /* footer */
 
 footer {
@@ -129,10 +180,6 @@ img {
 
 /* pagina categorias */
 
-/* media querys "categorias */
-
-/* fin media querys categorias */
-
 .detalles-card{
     background-color: rgb(90, 214, 255);
     padding: 5px;
@@ -154,6 +201,54 @@ img {
 
 /* media querys servicios */
 
+/* Media query para pantallas de 768px o menos */
+@media only screen and (max-width: 768px) {
+    .car-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+      padding: 10px;
+    }
+    .card img {
+      height: 100px;
+    }
+  }
+  
+  /* Media query para pantallas de 480px o menos */
+  @media only screen and (max-width: 480px) {
+    .car-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+      padding: 5px;
+    }
+    .card img {
+      height: 50px;
+    }
+  }
+  
+  /* Media query para pantallas de 320px o menos */
+  @media only screen and (max-width: 320px) {
+    .card {
+      padding: 3px;
+    }
+    .card img {
+      height: 30px;
+    }
+  }
+  
+  /* Media query para pantallas de 1024px o más */
+  @media only screen and (min-width: 1024px) {
+    .car-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .card {
+      padding: 30px;
+    }
+    .card img {
+      height: 200px;
+    }
+  }
 /* fin media querys servicios*/
 
 /* pagina de "servicios" */
