@@ -1,0 +1,90 @@
+//media querys index
+@media only screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .photo {
+      padding: 10px;
+    }
+    .photo img {
+      height: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .photo {
+      padding: 5px;
+    }
+    .photo img {
+      height: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .photo {
+      padding: 3px;
+    }
+    .photo img {
+      height: 30px;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .photo {
+      padding: 30px;
+    }
+    .photo img {
+      height: 200px;
+    }
+  }
+  //mediaquerys servicios
+  @media only screen and (max-width: 768px) {
+    .car-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+      padding: 10px;
+    }
+    .card img {
+      height: 100px;
+    }
+  }
+  /* Media query para pantallas de 480px o menos */
+  @media only screen and (max-width: 480px) {
+    .car-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+      padding: 5px;
+    }
+    .card img {
+      height: 50px;
+    }
+  }
+  /* Media query para pantallas de 320px o menos */
+  @media only screen and (max-width: 320px) {
+    .card {
+      padding: 3px;
+    }
+    .card img {
+      height: 30px;
+    }
+  }
+  /* Media query para pantallas de 1024px o más */
+  @media only screen and (min-width: 1024px) {
+    .car-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .card {
+      padding: 30px;
+    }
+    .card img {
+      height: 200px;
+    }
+  }

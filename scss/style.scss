@@ -1,0 +1,16 @@
+//base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/utilities";
+@import "./base/mixins";
+//components
+@import "./components/navbar";
+@import "./components/footer";
+
+//layout
+@import "./layout/index";
+@import "./layout/categorias";
+@import "./layout/servicios";
+@import "./layout/contacto";
+@import "./layout/ayuda";
+@import "./layout/mediaquerys";

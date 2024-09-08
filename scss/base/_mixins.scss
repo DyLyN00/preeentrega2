@@ -1,0 +1,41 @@
+@mixin contenedor-estilo {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  @mixin grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+  }
+  
+  @mixin card {
+    background-color: rgb(90, 214, 255);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+  }
+  
+  @mixin photo {
+    object-fit: cover;
+    border-radius: 10px;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  }
+  
+  @mixin text {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  @mixin detalles {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+  }

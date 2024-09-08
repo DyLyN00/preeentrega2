@@ -1,0 +1,41 @@
+.servicios {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+  }
+  
+  .card {
+    background-color: rgb(90, 214, 255);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  .card h3 {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+ .card p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+ }
