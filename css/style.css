@@ -1,4 +1,16 @@
-@charset "UTF-8";
+body {
+  background-color: #000000;
+  color: white;
+}
+
+nav {
+  background-color: #2995dd;
+}
+
+.button {
+  background-color: #060606;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,87 +20,81 @@
 .logo-img {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  overflow-x: hidden;
 }
 
 h1 {
-  color: rgb(255, 255, 255);
+  color: #060606;
   text-align: center;
 }
 
 .container-fluid {
-  background-color: rgb(90, 214, 255);
+  background-color: #2995dd;
 }
 
 .nav-link {
-  color: rgb(255, 255, 255);
+  color: #060606;
 }
 
 .navbar-toggler {
-  background-color: rgb(90, 214, 255);
-}
-
-footer {
-  background-color: rgb(90, 214, 255);
-  color: black;
-  padding: 20px;
-  text-align: left;
+  background-color: #060606;
 }
 
 .container-footer {
-  margin: 20px;
   display: flex;
-  justify-content: space-between;
-}
-
-.contenedor-contato {
-  flex-basis: 30%;
-}
-
-.contenedor-redes {
-  flex-basis: 30%;
-}
-
-.contenedor-logo {
-  flex-basis: 30%;
-}
-
-.footer-logo {
-  width: 200px;
-  height: 200px;
-}
-
-h3 {
-  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #2995dd;
   text-align: center;
 }
 
-ul {
+.contenedor-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.contenedor-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #2995dd;
+  transition: all 0.3s ease;
+}
+
+.contenedor-contacto {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #060606;
+}
+
+.contenedor-redes ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 li {
-  margin-bottom: 10px;
+  margin: 0 10px;
 }
 
 a {
-  color: black;
-  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
-
-img {
-  width: 50px;
-  height: 50px;
-  margin: 20px;
-  border-radius: 100%;
-  display: flex;
-  justify-items: left;
-}
-
-.destino-footer {
-  width: 100px;
-  height: 100px;
+a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .grid {
@@ -99,8 +105,8 @@ img {
 
 .text {
   padding: 20px;
-  color: rgb(90, 214, 255);
-  border: 1px solid black;
+  color: white;
+  border: 1px solid #060606;
 }
 
 .video {
@@ -110,37 +116,49 @@ img {
 
 .photo {
   width: 100%;
+  max-width: 300px;
   height: 200px;
-  border-radius: 10px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px white;
+}
+.photo img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .detalles {
   padding: 20px;
   font-size: 16px;
-  border: 2px solid black;
+  border: 2px solid #2995dd;
   color: rgb(90, 214, 255);
 }
 
 .detalles-card {
-  background-color: rgb(90, 214, 255);
+  background-color: #060606;
   padding: 5px;
-  box-shadow: 0 0 10px rgb(90, 214, 255);
+  box-shadow: 0 0 10px white;
   border-radius: 10px;
 }
 
 .photo-card {
-  background-color: black;
-  box-shadow: 10px 10px 10px black;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  max-width: 300px;
   height: 100px;
-  width: 200px;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px white;
+}
+.photo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .servicios {
-  background-color: white;
+  background-color: #060606;
   padding: 50px;
   text-align: center;
 }
@@ -150,11 +168,11 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: #060606;
 }
 
 .card {
-  background-color: rgb(90, 214, 255);
+  background-color: #2995dd;
   padding: 20px;
   margin: 20px;
   width: 300px;
@@ -177,12 +195,40 @@ img {
 
 .card p {
   font-size: 16px;
-  color: black;
+  color: #060606;
   margin-bottom: 20px;
 }
 
+.form-container {
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #2995dd;
+}
+
+button {
+  background-color: #2995dd;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .contactos {
-  background-color: white;
+  background-color: #060606;
   padding: 50px;
   text-align: center;
 }
@@ -195,7 +241,7 @@ img {
 }
 
 .card {
-  background-color: rgb(90, 214, 255);
+  background-color: #060606;
   padding: 20px;
   margin: 20px;
   width: 300px;
@@ -217,40 +263,12 @@ img {
 
 .card p {
   font-size: 16px;
-  color: black;
+  color: #060606;
   margin-bottom: 20px;
-}
-
-.form-container {
-  margin-top: 50px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgb(90, 214, 255);
-}
-
-button {
-  background-color: rgb(90, 214, 255);
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
 }
 
 .ayuda {
-  background-color: #f7f7f7;
+  background-color: #060606;
   padding: 50px;
   text-align: center;
 }
@@ -263,7 +281,7 @@ button {
 }
 
 .card {
-  background-color: rgb(90, 214, 255);
+  background-color: #2995dd;
   padding: 20px;
   margin: 20px;
   width: 300px;
@@ -285,13 +303,13 @@ button {
 
 .card p {
   font-size: 16px;
-  color: black;
+  color: white;
   margin-bottom: 20px;
 }
 
 .card button {
-  background-color: black;
-  color: rgb(90, 214, 255);
+  background-color: #060606;
+  color: #2995dd;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -354,7 +372,6 @@ button {
     height: 100px;
   }
 }
-/* Media query para pantallas de 480px o menos */
 @media only screen and (max-width: 480px) {
   .car-container {
     grid-template-columns: repeat(1, 1fr);
@@ -366,7 +383,6 @@ button {
     height: 50px;
   }
 }
-/* Media query para pantallas de 320px o menos */
 @media only screen and (max-width: 320px) {
   .card {
     padding: 3px;
@@ -375,7 +391,6 @@ button {
     height: 30px;
   }
 }
-/* Media query para pantallas de 1024px o más */
 @media only screen and (min-width: 1024px) {
   .car-container {
     grid-template-columns: repeat(4, 1fr);
@@ -386,6 +401,60 @@ button {
   .card img {
     height: 200px;
   }
+}
+/* media querys footer*/
+@media (min-width: 768px) {
+  .container-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5rem;
+  }
+  .container-footer .contenedor-logo {
+    max-width: 120px;
+  }
+  .container-footer .contenedor-contacto, .container-footer .contenedor-redes {
+    font-size: 1rem;
+    margin-top: 0;
+    text-align: left;
+  }
+  .container-footer .contenedor-redes ul {
+    justify-content: flex-start;
+  }
+  .container-footer .contenedor-redes ul img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .container-footer {
+    padding: 3rem;
+  }
+  .container-footer .contenedor-logo {
+    max-width: 150px;
+  }
+  .container-footer .contenedor-logo img {
+    width: 100%;
+    height: auto;
+  }
+  .container-footer .contenedor-contacto, .container-footer .contenedor-redes {
+    font-size: 1.1rem;
+  }
+  .container-footer .contenedor-redes ul img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .container-footer {
+    padding: 4rem;
+  }
+}
+.contenedor-logo {
+  max-width: 200px;
+}
+
+.contenedor-redes ul img {
+  width: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

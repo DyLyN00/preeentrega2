@@ -6,8 +6,8 @@
   
   .text {
     padding: 20px;
-    color: rgb(90, 214, 255);
-    border: 1px solid black;
+    color: $text-color;
+    border: 1px solid $secondary-color;
   }
   
   .video {
@@ -16,15 +16,23 @@
   }
   
   .photo {
-    width: 100%;
+    width: 100%; 
+    max-width: 300px; 
     height: 200px;
-    border-radius: 10px;
+    margin: auto;
+    border-radius: 8px;  
+    box-shadow: 0px 4px 6px $text-color; 
+    img {
+      width: 100%;
+      height: 300px; 
+      object-fit: cover; 
+    }
   }
   
   .detalles {
     padding: 20px;
     font-size: 16px;
-    border: 2px solid black;
+    border: 2px solid $primary-color;
     color: rgb(90, 214, 255);
   }
   

@@ -1,3 +1,17 @@
-$primary-color:  rgb(90, 214, 255);
-$secundary-color:  rgb(0, 0, 0);
-$third-color: rgb(255, 255, 255);
+$primary-color: #2995dd;
+$secondary-color: #060606;
+$background-color: #000000;
+$text-color: #ffff;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+nav {
+  background-color: $primary-color;
+}
+
+.button {
+  background-color: $secondary-color;
+}

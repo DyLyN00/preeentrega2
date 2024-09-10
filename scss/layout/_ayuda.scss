@@ -1,5 +1,5 @@
 .ayuda {
-    background-color: #f7f7f7;
+    background-color: $secondary-color;
     padding: 50px;
     text-align: center;
   }
@@ -12,11 +12,11 @@
   }
   
   .card {
-    background-color: rgb(90, 214, 255);
+    background-color: $primary-color;
     padding: 20px;
     margin: 20px;
     width: 300px;
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 10px $text-color;
     border-radius: 10px;
   }
   
@@ -34,13 +34,13 @@
   
   .card p {
     font-size: 16px;
-    color: black;
+    color: $text-color;
     margin-bottom: 20px;
   }
   
   .card button {
-    background-color: black;
-    color: rgb(90, 214, 255);
+    background-color: $secondary-color;
+    color: $primary-color;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
@@ -48,5 +48,5 @@
   }
   
   .card button:hover {
-    background-color: white;
+    background-color: $text-color;
   }

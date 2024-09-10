@@ -44,7 +44,7 @@
     }
   }
   //mediaquerys servicios
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .car-container {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -55,8 +55,7 @@
       height: 100px;
     }
   }
-  /* Media query para pantallas de 480px o menos */
-  @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .car-container {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -67,8 +66,8 @@
       height: 50px;
     }
   }
-  /* Media query para pantallas de 320px o menos */
-  @media only screen and (max-width: 320px) {
+
+@media only screen and (max-width: 320px) {
     .card {
       padding: 3px;
     }
@@ -76,8 +75,7 @@
       height: 30px;
     }
   }
-  /* Media query para pantallas de 1024px o más */
-  @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .car-container {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -88,3 +86,66 @@
       height: 200px;
     }
   }
+/* media querys footer*/
+@media (min-width: 768px) {
+  .container-footer {
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 2.5rem; 
+
+    .contenedor-logo {
+      max-width: 120px; 
+    }
+
+    .contenedor-contacto, .contenedor-redes {
+      font-size: 1rem; 
+      margin-top: 0;
+      text-align: left; 
+    }
+
+    .contenedor-redes ul {
+      justify-content: flex-start;
+      img {
+        width: 40px; 
+        height: 40px;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .container-footer {
+    padding: 3rem;
+
+    .contenedor-logo {
+      max-width: 150px; 
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .contenedor-contacto, .contenedor-redes {
+      font-size: 1.1rem; 
+    }
+    .contenedor-redes ul {
+      img {
+        width: 50px; 
+        height: 50px;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .container-footer {
+    padding: 4rem; 
+  }
+}
+    .contenedor-logo {
+      max-width: 200px; 
+    }
+
+    .contenedor-redes ul {
+      img {
+        width: 60px; 
+      }
+    }
+

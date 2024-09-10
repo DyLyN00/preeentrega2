@@ -1,22 +1,23 @@
 .logo-img {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    overflow-x: hidden;
   }
   
   h1 {
-    color: $third-color;
+    color: $secondary-color;
     text-align: center;
   }
   
   .container-fluid {
-    background-color: rgb(90, 214, 255);
+    background-color: $primary-color;
   }
   
   .nav-link {
-    color: $third-color;
+    color: $secondary-color;
   }
   
   .navbar-toggler {
-    background-color: rgb(90, 214, 255);
+    background-color: $secondary-color;
   }
-  
