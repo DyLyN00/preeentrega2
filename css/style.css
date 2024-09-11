@@ -115,8 +115,8 @@ a img {
 }
 
 .photo {
-  width: 100%;
-  max-width: 300px;
+  max-width: 100%;
+  width: 300px;
   height: 200px;
   margin: auto;
   border-radius: 8px;
@@ -143,9 +143,9 @@ a img {
 }
 
 .photo-card {
-  width: 100%;
-  max-width: 300px;
-  height: 100px;
+  max-width: 100%;
+  width: 300px;
+  height: 200px;
   margin: auto;
   border-radius: 8px;
   overflow: hidden;
